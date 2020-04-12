@@ -25,6 +25,11 @@ public class Controlador implements ActionListener {
     private Vista vista;   
     
     /**
+     * DefaultListModel para ser agregada al JList
+     */
+    DefaultListModel list = new DefaultListModel();
+    
+    /**
      * Constructor vacío
      */
     public Controlador(){
@@ -49,7 +54,6 @@ public class Controlador implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e){
         modelo = new Modelo(vista.TF_Ingresar.getText());
-        DefaultListModel list = new DefaultListModel();
         list.addElement(modelo.getMensaje());
         vista.L_Mostrar.setModel(list);
     }
