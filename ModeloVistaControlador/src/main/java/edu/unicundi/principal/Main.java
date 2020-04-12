@@ -23,5 +23,6 @@ public class Main {
         
         Controlador control = new Controlador(modelo, vista);
         vista.setVisible(true);
+        vista.setLocationRelativeTo(null);
     }
 }
