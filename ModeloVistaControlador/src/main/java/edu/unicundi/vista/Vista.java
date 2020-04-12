@@ -1,13 +1,16 @@
 package edu.unicundi.vista;
 
 /**
- *
+ *  Clase Vista para implementar la arquitectura de software MVC
  * @author Camilo Tinoco
  * @author Johan Zambrano
  * @version 1.0.0
  */
 public class Vista extends javax.swing.JFrame {
 
+    /**
+     * Constructor para inicializar los componentes de la ventana
+     */
     public Vista() {
         initComponents();
     }
