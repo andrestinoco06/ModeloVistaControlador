@@ -56,5 +56,6 @@ public class Controlador implements ActionListener {
         modelo = new Modelo(vista.TF_Ingresar.getText());
         list.addElement(modelo.getMensaje());
         vista.L_Mostrar.setModel(list);
+        vista.TF_Ingresar.setText("");
     }
 }
